@@ -1,0 +1,41 @@
+.sidebar{
+    background-color: #323232;
+    height: 100vh;
+    width: 240px;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    &__icon{
+        position: absolute;
+        padding: .5rem;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+    }
+
+    &__list{
+        list-style: none;
+        padding: 1rem 0;
+    }
+
+    &__item{
+        border-bottom: 1px solid #2a2a2a;
+    }
+
+    &__link{
+        color: #fff;
+        display: block;
+        font-size: 1.2rem;
+        text-decoration: none;
+        padding: 8px;
+        font-weight: 300;
+
+        &:hover{
+            background-color:#111;
+            border-left: 5px solid #FC4B3A;
+            color:  #FE6C56;
+        }
+    }
+    
+}

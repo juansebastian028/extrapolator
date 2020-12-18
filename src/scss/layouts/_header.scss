@@ -1,0 +1,26 @@
+.header{
+
+    &__content{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        border-bottom: 1px solid #FC4B3A;
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+        place-items: center;
+    }
+
+    &__icon, &__title{    
+        font-size: 2rem;
+    }
+
+    &__icon{
+        cursor: pointer;
+    }
+
+    @media (max-width: 992px) {
+
+        &__title, &__icon{
+            font-size: 1.5rem;
+        }
+    }
+}
