@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { separeteCreditCard } from "../helpers/separateCreditCard";
 import { AddCreditCard } from "./AddCreditCard";
 
-export const Indentation = () => {
+export const Indentation = React.memo(() => {
   const [bin, setBin] = useState('');
 
   const extrapolate = ({creditCardOne}) => {
@@ -40,4 +40,4 @@ export const Indentation = () => {
       <AddCreditCard isCreditCardTwoRequired={false} extrapolate = {extrapolate} bin={bin} exampleBin="4915110x76xx87x0" />
     </div>
   );
-};
+});

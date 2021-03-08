@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { extrapolateSimilitudeMethod } from "../helpers/similitude";
 import { AddCreditCard } from "./AddCreditCard";
 
-export const Similitude = () => {
+export const Similitude = React.memo(() => {
   const [bin, setBin] = useState("");
 
   const extrapolate = ({ creditCardOne, creditCardTwo }) => {
@@ -16,4 +16,4 @@ export const Similitude = () => {
       <AddCreditCard isCreditCardTwoRequired={true} extrapolate={extrapolate} bin={bin} exampleBin="49151101xxxx8x9x"/>
     </div>
   );
-};
+});

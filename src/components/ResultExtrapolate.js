@@ -1,14 +1,13 @@
 import React, { useRef } from "react";
 import PropTypes from "prop-types";
 
-export const ResultExtrapolate = ({ bin, exampleBin }) => {
+export const ResultExtrapolate = React.memo(({ bin, exampleBin }) => {
   const inputEl = useRef(null);
 
   const copyCodeToClipboard = () => {
     inputEl.current.select();
     document.execCommand("copy");
   };
-
   return (
     <div className="form__group">
       <label className="form__label" htmlFor="inputBin">
@@ -26,7 +25,7 @@ export const ResultExtrapolate = ({ bin, exampleBin }) => {
       <button className="btn" onClick={copyCodeToClipboard}>Copy!</button>
     </div>
   );
-};
+});
 
 ResultExtrapolate.propTypes = {
   bin: PropTypes.string.isRequired,

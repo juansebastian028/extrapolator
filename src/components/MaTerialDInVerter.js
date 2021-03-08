@@ -3,7 +3,7 @@ import { AddCreditCard } from "./AddCreditCard";
 import { separeteCreditCard } from "../helpers/separateCreditCard";
 import { extrapolateSimilitudeMethod } from "../helpers/similitude";
 
-export const MaTerialDInVerter = () => {
+export const MaTerialDInVerter = React.memo(() => {
   const [bin, setBin] = useState("");
 
   const extrapolate = ({ creditCardOne, creditCardTwo }) => {
@@ -42,4 +42,4 @@ export const MaTerialDInVerter = () => {
       <AddCreditCard isCreditCardTwoRequired={true} extrapolate={extrapolate} bin={bin} exampleBin="49151101x69xxxx1" />
     </div>
   );
-};
+});

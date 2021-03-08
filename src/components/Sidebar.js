@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
@@ -12,42 +12,37 @@ export const Sidebar = ({setIsSidebarActive}) => {
       <FontAwesomeIcon className="sidebar__icon" icon={faTimes} onClick={toggleSidebar} />
       <ul className="sidebar__list">
         <li className="sidebar__item">
-          {" "}
-          <Link className="sidebar__link" to="/">
+          <NavLink className="sidebar__link" activeClassName="sidebar__active" exact to="/" replace>
             Basic
-          </Link>
+          </NavLink>
         </li>
         <li className="sidebar__item">
-          {" "}
-          <Link className="sidebar__link" to="/activation">
+          <NavLink className="sidebar__link" activeClassName="sidebar__active" to="/activation" replace>
             Activation
-          </Link>
+          </NavLink>
         </li>
         <li className="sidebar__item">
-          {" "}
-          <Link className="sidebar__link" to="/similitude">
+          <NavLink className="sidebar__link" activeClassName="sidebar__active" to="/similitude" replace>
             Similitude
-          </Link>
+          </NavLink>
         </li>
         <li className="sidebar__item">
-          {" "}
-          <Link className="sidebar__link" to="/indentation">
+          <NavLink className="sidebar__link" activeClassName="sidebar__active" to="/indentation" replace>
             Indentation
-          </Link>
+          </NavLink>
         </li>
         <li className="sidebar__item">
-          {" "}
-          <Link className="sidebar__link" to="/sofia">
+          <NavLink className="sidebar__link" activeClassName="sidebar__active" to="/sofia" replace>
             SoFIA
-          </Link>
+          </NavLink>
         </li>
         <li className="sidebar__item">
-          {" "}
-          <Link className="sidebar__link" to="/maTerialDInVerter">
+          <NavLink className="sidebar__link" activeClassName="sidebar__active" to="/maTerialDInVerter" replace>
             MaTerialDInVerter
-          </Link>
+          </NavLink>
         </li>
       </ul>
+      <p className="sidebar__creator">© Copyright 2021, Juan Sebastián. All rights reserved.</p>
     </nav>
   );
 };

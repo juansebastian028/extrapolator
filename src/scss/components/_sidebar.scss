@@ -16,7 +16,7 @@
 
     &__list{
         list-style: none;
-        padding: 1rem 0;
+        padding: 1rem 0 0;
     }
 
     &__item{
@@ -31,11 +31,17 @@
         padding: 8px;
         font-weight: 300;
 
-        &:hover{
-            background-color:#111;
-            border-left: 5px solid #FC4B3A;
-            color:  #FE6C56;
-        }
+    }
+
+    &__creator{
+        text-align: center;
+        color: #636260
+    }
+
+    &__active{
+        background-color:#111;
+        border-left: 5px solid #FC4B3A;
+        color:  #FE6C56;
     }
     
 }

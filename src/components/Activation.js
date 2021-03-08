@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import { AddCreditCard } from "./AddCreditCard";
 
-export const Activation = () => {
+export const Activation = React.memo(() => {
   const [bin, setBin] = useState('');
-
+  
   const extrapolate = ({creditCardOne}) => {
     const lastSixNumbers = creditCardOne.substr(creditCardOne.length - 6);
     const bin = creditCardOne.replace(lastSixNumbers, "xxxxxx");
@@ -17,4 +17,4 @@ export const Activation = () => {
       <AddCreditCard isCreditCardTwoRequired={false} extrapolate = {extrapolate} bin={bin} exampleBin="4915110176xxxxxx"/>
     </div>
   );
-};
+});

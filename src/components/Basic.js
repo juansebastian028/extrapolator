@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { AddCreditCard } from "./AddCreditCard";
 
-export const Basic = () => {
+export const Basic = React.memo(() => {
   const [bin, setBin] = useState("");
 
   const extrapolate = ({ creditCardOne }) => {
@@ -21,4 +21,4 @@ export const Basic = () => {
       />
     </div>
   );
-};
+});

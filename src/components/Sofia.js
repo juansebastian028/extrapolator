@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { AddCreditCard } from './AddCreditCard'
 
-export const Sofia = () => {
+export const Sofia = React.memo(() => {
 
     const [bin, setBin] = useState("");
 
@@ -45,4 +45,4 @@ export const Sofia = () => {
             <AddCreditCard isCreditCardTwoRequired={true} extrapolate={extrapolate} bin={bin} exampleBin="4915110157xxxxxx" />
         </div>
     )
-}
+});
