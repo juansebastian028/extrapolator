@@ -9,6 +9,7 @@ import { Similitude } from "./components/Similutude";
 import { Indentation } from "./components/Indentation";
 import { Sofia } from "./components/Sofia";
 import { MaTerialDInVerter } from "./components/MaTerialDInVerter";
+import { About } from "./components/About";
 import "./scss/styles.scss";
 
 function App() {
@@ -36,6 +37,9 @@ function App() {
         </Route>
         <Route path="/maTerialDInVerter">
           <MaTerialDInVerter />
+        </Route>
+        <Route path="/about">
+          <About />
         </Route>
       </Switch>
 

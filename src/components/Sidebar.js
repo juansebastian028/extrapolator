@@ -41,6 +41,11 @@ export const Sidebar = ({setIsSidebarActive}) => {
             MaTerialDInVerter
           </NavLink>
         </li>
+        <li className="sidebar__item">
+          <NavLink className="sidebar__link" activeClassName="sidebar__active" to="/about" replace>
+            About
+          </NavLink>
+        </li>
       </ul>
       <p className="sidebar__creator">© Copyright 2021, Juan Sebastián. All rights reserved.</p>
     </nav>
