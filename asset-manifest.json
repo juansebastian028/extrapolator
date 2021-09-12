@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/extrapolator/static/css/main.24c2c25e.chunk.css",
-    "main.js": "/extrapolator/static/js/main.b85cf636.chunk.js",
-    "main.js.map": "/extrapolator/static/js/main.b85cf636.chunk.js.map",
+    "main.js": "/extrapolator/static/js/main.dc610df1.chunk.js",
+    "main.js.map": "/extrapolator/static/js/main.dc610df1.chunk.js.map",
     "runtime-main.js": "/extrapolator/static/js/runtime-main.dd17216a.js",
     "runtime-main.js.map": "/extrapolator/static/js/runtime-main.dd17216a.js.map",
     "static/js/2.878a3f17.chunk.js": "/extrapolator/static/js/2.878a3f17.chunk.js",
     "static/js/2.878a3f17.chunk.js.map": "/extrapolator/static/js/2.878a3f17.chunk.js.map",
     "index.html": "/extrapolator/index.html",
+    "service-worker.js": "/extrapolator/service-worker.js",
+    "service-worker.js.map": "/extrapolator/service-worker.js.map",
     "static/css/main.24c2c25e.chunk.css.map": "/extrapolator/static/css/main.24c2c25e.chunk.css.map",
     "static/js/2.878a3f17.chunk.js.LICENSE.txt": "/extrapolator/static/js/2.878a3f17.chunk.js.LICENSE.txt"
   },
@@ -15,6 +17,6 @@
     "static/js/runtime-main.dd17216a.js",
     "static/js/2.878a3f17.chunk.js",
     "static/css/main.24c2c25e.chunk.css",
-    "static/js/main.b85cf636.chunk.js"
+    "static/js/main.dc610df1.chunk.js"
   ]
 }
